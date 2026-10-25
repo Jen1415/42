@@ -21,10 +21,11 @@ int	ft_ultimate_range(int **range, int min, int max)
 }
 
 #include <stdio.h>
+#include <limits.h>
 int	main(void)
 {
 	int *range;
-	int size = ft_ultimate_range(&range, 0, 9);
+	int size = ft_ultimate_range(&range, 0, 1000000);
 	int i = 0;
 	printf("size: %d\n", size);
 	while (i < size)
